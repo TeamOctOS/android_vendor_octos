@@ -51,3 +51,7 @@ include vendor/octos/config/branding.mk
 
 # Vendor Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/octos/overlay/common
+
+# Google sounds
+include vendor/octos/google/GoogleAudio.mk
+
