@@ -152,8 +152,6 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     LiveLockScreenService \
     LockClock \
-    Screencast \
-    SoundRecorder \
     Trebuchet \
     WallpaperPicker \
     WeatherProvider
