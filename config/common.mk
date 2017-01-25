@@ -125,8 +125,7 @@ PRODUCT_PACKAGES += \
     busybox \
     OctOTA \
     OmniSwitch \
-    PixelLauncher \
-    KernelAdiutor \
+    PixelLauncher
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
