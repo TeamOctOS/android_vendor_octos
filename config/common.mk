@@ -153,6 +153,9 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     WeatherProvider
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
