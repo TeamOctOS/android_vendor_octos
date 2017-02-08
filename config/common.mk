@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
     busybox \
     OctOTA \
     OmniSwitch \
+    OmniStyle \
     PixelLauncher
 
 # Optional CM packages
