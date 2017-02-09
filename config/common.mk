@@ -116,7 +116,6 @@ PRODUCT_PACKAGES += \
 # OctOs packages
 PRODUCT_PACKAGES += \
     AboutOctOs \
-    busybox \
     OctOTA \
     OmniSwitch \
     OmniStyle \
