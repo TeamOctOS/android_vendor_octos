@@ -20,7 +20,6 @@ We have Gapps here.
 [*] Substatum theme engine!
 [*] Tentacles settings!
 [*] Pixel Launcher Included
-[*] KernelAdiutor-Mod
 [*] Power menu options
 [*] Screenshot
 [*] Screen record
@@ -70,8 +69,8 @@ The Android Debugging Bridge (ADB) is a powerful tool available from Google as p
 [LIST=1]
 [*]Download ROM .zip file and MD5 file, and grab your favorite Open Gapps package [URL="http://opengapps.org/"]http://opengapps.org[/URL][*]Reboot to Recovery (Note: Use Reboot to Recovery from Power Menu, Hardware-based boot to recovery, or adb reboot recovery - ROM Manager or similar software is NOT supported)
 [COLOR="Red"]--- TWRP is the ONLY recovery Team OctOs uses - We do not support flashing on CWM ---[/COLOR]
-[*]Factory Reset from TWRP
-[*]Flash ROM and GApps .ZIP files
+[COLOR="RED"]The Oct-N ROM installation script will automatically wipe /system, /cache, and /dalvik-cache. There is no need to do these before or after flashing the ROM unless you are instructed to by your Gapps Provider. When dirty flashing weekly updates, you MUST reflash Gapps along with any other files, apps, custom mods or kernels etc.. (anything that resides in system partition)[/COLOR]
+[*]Flash ROM, GApps and any additional .ZIP files
 [*]Reboot
 [/LIST]
 [SIZE="4"]Download[/SIZE]
