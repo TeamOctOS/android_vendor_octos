@@ -689,7 +689,7 @@ function mka() {
                 ;;
             *)
                 if [[ -z $TO_OR ]]; then
-                    export TO_OR=$(cat /proc/cpuinfo | grep "^processor" | wc -l)
+                    export TO_OR=$(grep "^processor" /proc/cpuinfo | wc -l)
                 fi
                     echo "Using $TO_OR Threads"
                     mk_timer schedtool -B -n 1 -e ionice -n 1 make -C $T -j$TO_OR "$@"
@@ -736,7 +736,7 @@ function mms() {
                 make -C $T -j $NUM_CPUS "$@"
             ;;
         *)
-            local NUM_CPUS=$(cat /proc/cpuinfo | grep "^processor" | wc -l)
+            local NUM_CPUS=$(grep "^processor" /proc/cpuinfo | wc -l)
             ONE_SHOT_MAKEFILE="__none__" \
                 mk_timer schedtool -B -n 1 -e ionice -n 1 \
                 make -C $T -j $NUM_CPUS "$@"
