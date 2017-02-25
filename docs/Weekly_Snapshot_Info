@@ -1,0 +1,11 @@
+This procedure takes place on Thursday (in most cases). Please DO YOUR PART as maintainers to ensure a smooth weekly build and satisfied end user.
+
+To get all of our build boxes on the same source a "weekly snapshot" file is created. What Aaron does is run the vendor/tools/to_snapshot.sh to create that file when the source code is in a known working state, this creates basically a shell script that will reposition all of the repos to the commit we want to use.
+
+In order to test the code we want for an upcoming weekly we NEED you guys to sync up the code normally then grab the latest snapshot file from gerrit and put it in your build directory root. Once you have it in there run ". build/envsetup.sh" and run the "weekly_snapshot.sh.
+
+This is what is used in order to keep all 6 of the build boxes on identical code so when we test for weekly builds the code is positioned to the source we will be using.
+
+Once you have done this and tested your build. Please let us know so that your weekly will be built without issue.
+
+Thanks: Team-OctOS
