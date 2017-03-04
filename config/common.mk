@@ -113,6 +113,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AboutOctOs \
     OctOTA \
+    OmniJaws \
     OmniSwitch \
     OmniStyle \
     PixelLauncher
