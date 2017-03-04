@@ -134,8 +134,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
     CMUpdater \
-    CMWallpapers \
-    CyanogenSetupWizard \
+    CustomTiles \
     Eleven \
     ExactCalculator \
     LiveLockScreenService \
