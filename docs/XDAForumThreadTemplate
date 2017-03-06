@@ -17,19 +17,23 @@ We have Gapps here.
 
 [size=4]Feature List[/size]
 [quote][LIST]
-[*] Substatum theme engine!
-[*] Tentacles settings!
-[*] Pixel Launcher Included
-[*] Power menu options
-[*] Screenshot
-[*] Screen record
-[*] DPI settings
-[*] Status bar time and date options
-[*] Status bar network traffic indicator
-[*] Status bar notification settings
-[*] Quick tile settings
-[*] Volume button playback control
-[*] Volume button wake
+[*]Substratum rootless theme engine support (must install Substratum from play store)
+[*]Tentacles settings!
+[*]Pixel Launcher Included
+[*]OmniSwitch
+[*]Power menu options
+[*]Screenshot
+[*]Screen record
+[*]DPI settings
+[*]Status bar time and date options
+[*]Status bar network traffic indicator
+[*]Status bar notification settings
+[*]Quick tile settings
+[*]Volume button playback control
+[*]Volume button wake
+[*]DUI (fling, pulse, smartbar)
+[*]Screen record
+[*]And much more!!!!
 [/LIST]
 [/quote]
 
@@ -45,10 +49,10 @@ Q: Why isn't there XYZ feature?
 A: Shoot us a Suggestion if you want to see something added.  While we are not going to promise to implement, we will always look into it
 
 Q: But all the others have..
-A: ROM developers, build something they want to use.  The ROM developer that includes something they won't run implies less than 100% effort to ensure it does work.  As a team, we have similar goals and objectives.  If XYZ ROM has a feature you want, and we don't include (or don't want to include), feel free to use XYZ ROM, or build your own custom version of Oct-M.
+A: ROM developers, build something they want to use.  The ROM developer that includes something they won't run implies less than 100% effort to ensure it does work.  As a team, we have similar goals and objectives.  If XYZ ROM has a feature you want, and we don't include (or don't want to include), feel free to use XYZ ROM, or build your own custom version of Oct-N.
 
 Q: What about root?
-A: Actually this version of OCT-N uses embedded root acccess which can be enabled in development settings.
+A: Root is removed by default (user will be able to flash which ever root zip they want)
 
 [SIZE="4"]Bugs:[/SIZE]
 Bugs happen.  Our testers are very good at breaking things, but no where near as good as the rest of the Android public.  In order to investigate and fix issues, we need the help of the users who are going to report them.  The Android OS has many nifty features to help us in this, but only if we can engage the user to assist us.
@@ -86,7 +90,7 @@ Unless otherwise specified, all Oct-N builds kernel souce can be found on github
 [URL="http://review.teamoctos.com:8080"]Team OctOs Gerrit Review - http://www.teamoctos.com:8080[/URL]
 [URL="http://www.teamoctos.com/license/"]Team OctOs GPLv2 License - http://www.teamoctos.com/license/[/URL]
 [URL="https://www.patreon.com/TOctOs"]Team OctOs Patreon Campaign - https://www.patreon.com/TOctOs[/URL]
-Paypal - https://www.paypal.com/us/cgi-bin/we...37e57608011f58
+[URL="https://www.teamoctos.com/donate/"]Donate to OctOS Developement (PayPal)[/URL]
 
 [SIZE="3"]Want To Build Your Own?[/SIZE]
 Check out the [URL="https://github.com/Team-OctOS/platform_manifest#team-octos-android-source"][COLOR="GREEN"]ReadMe[/COLOR][/URL] on our GitHub for Instructions
