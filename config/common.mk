@@ -23,10 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.substratum.verified=true
 
-#substratum
-PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/apk/substratum.apk:system/app/substratum/substratum.apk
-
 #Pixel Launcher
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/apk/PixelLauncher.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
@@ -240,7 +236,7 @@ PRODUCT_BOOT_JARS += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
-    procrank 
+    procrank
 
 # Conditionally build in su
 ifeq ($(WITH_SU),true)
@@ -272,4 +268,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
-
