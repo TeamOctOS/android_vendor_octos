@@ -105,9 +105,9 @@ PRODUCT_PACKAGES += \
     Profiles \
     WeatherManagerService
 
-# OMS MASQUERADE
+# OMS interfacer
 PRODUCT_PACKAGES += \
-   masquerade
+   ThemeInterfacer
 
 # OctOs packages
 PRODUCT_PACKAGES += \
