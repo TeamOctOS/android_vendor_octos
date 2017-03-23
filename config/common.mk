@@ -52,9 +52,10 @@ PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/to/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-# Backup Services whitelist
+# System feature whitelists
 PRODUCT_COPY_FILES += \
-    vendor/to/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
+    vendor/to/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/to/config/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
