@@ -102,6 +102,7 @@ PRODUCT_PACKAGES += \
     CMAudioService \
     CMParts \
     Development \
+    Gello \
     Profiles \
     WeatherManagerService
 
