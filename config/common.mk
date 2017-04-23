@@ -22,5 +22,13 @@ PRODUCT_COPY_FILES += \
     vendor/octos/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/octos/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Init file
+PRODUCT_COPY_FILES += \
+    vendor/octos/prebuilt/common/etc/init.local.rc:root/init.du.rc
+
+# Don't export PS1 in /system/etc/mkshrc.
+PRODUCT_COPY_FILES += \
+    vendor/octos/prebuilt/common/etc/mkshrc:system/etc/mkshrc
+
 # Packages
 include vendor/octos/config/packages.mk
