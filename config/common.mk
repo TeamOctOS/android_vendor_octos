@@ -97,6 +97,11 @@ ifneq ($(TARGET_DISABLE_CMSDK), true)
 include vendor/to/config/cmsdk_common.mk
 endif
 
+# TWRP
+ifeq ($(WITH_TWRP),true)
+include vendor/to/config/twrp.mk
+endif
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
