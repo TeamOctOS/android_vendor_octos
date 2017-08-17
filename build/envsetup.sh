@@ -687,24 +687,14 @@ function mka() {
     rm -rf $OUT/system/addon.d/changelog.txt
     echo "Clean Up Complete! Time to Make it Dirty"
 
-    local T=$(gettop)
-    if [ "$T" ]; then
-        case `uname -s` in
-            Darwin)
-                make -C $T -j `sysctl hw.ncpu|cut -d" " -f2` "$@"
-                ;;
-            *)
-                if [[ -z $TO_OR ]]; then
-                    export TO_OR=$(grep "^processor" /proc/cpuinfo | wc -l)
-                fi
-                    echo "Using $TO_OR Threads"
-                    mk_timer schedtool -B -n 1 -e ionice -n 1 make -C $T -j$TO_OR "$@"
-                ;;
-        esac
-
-    else
-        echo "Couldn't locate the top of the tree.  Try setting TOP."
-    fi
+    case `uname -s` in
+        Darwin)
+            m -j "$@"
+            ;;
+        *)
+            mk_timer schedtool -B -n 10 -e ionice -n 7 m -j "$@"
+            ;;
+    esac
 }
 
 function cmka() {
