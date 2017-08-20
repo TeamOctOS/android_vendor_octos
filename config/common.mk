@@ -143,7 +143,6 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     Eleven \
     ExactCalculator \
-    LiveLockScreenService \
     LockClock \
     WallpaperPicker \
     WeatherProvider
