@@ -32,3 +32,6 @@ PRODUCT_COPY_FILES += \
 
 # Packages
 include vendor/octos/config/packages.mk
+
+# Branding
+include vendor/octos/config/branding.mk
