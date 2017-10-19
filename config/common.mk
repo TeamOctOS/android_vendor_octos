@@ -48,3 +48,6 @@ include vendor/octos/config/packages.mk
 
 # Branding
 include vendor/octos/config/branding.mk
+
+# Vendor Overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/octos/overlay/common
