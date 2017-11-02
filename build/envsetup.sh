@@ -101,9 +101,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        MODVERSION=$(get_build_var CM_VERSION)
-        ZIPFILE=cm-$MODVERSION.zip
-        ZIPPATH=$OUT/$ZIPFILE
+        ZIPPATH=`ls -tr "$OUT"/octos-*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
