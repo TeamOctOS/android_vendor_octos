@@ -1,26 +1,26 @@
 ###Files to edit
 
-1.  [Dependencies] (https://github.com/Team-OctOS-Devices/platform_vendor_to_product)
+1.  [Dependencies] (https://github.com/TeamOctOS-Devices/android_vendor_octos_product)
     - Found in the product directory
-    - The main branch should be oct-14.1 and legacy devices that can not be brought up to Android 14.x will also not be accepted.
+    - The main branch should be oreo and legacy devices that can not be brought up to oreo will also not be accepted.
     - Keep the file free of white spaces and formatted to look like the rest of the devices dependencies files.
 
-2.  [Product make files] (https://github.com/Team-OctOS-Devices/platform_vendor_to_product)
+2.  [Product make files] (https://github.com/TeamOctOS-Devices/android_vendor_octos_product)
     - Found in the product directory.
     - Easiest if you copy most from another to.mk file and just fill in the device specific areas correctly. Make sure you using the correct resolutions.
     - If you are using your own device overlays, don't forget to create the files. If you add them in the .mk, then you must create them or they will not be functional.
 
-3.  [Vendor setup] (https://github.com/Team-OctOS-Devices/platform_vendor_to_product)
+3.  [Vendor setup] (https://github.com/TeamOctOS-Devices/android_vendor_octos_product)
     - Self explanatory.
     - Keep alphabetical.
 
-4.  [XDA Forum Thread Template] (https://github.com/Team-OctOS/platform_vendor_to/tree/oct-14.1/docs/XDAForumThreadTemplate)
+4.  [XDA Forum Thread Template] (https://github.com/TeamOctOS/android_vendor_octos/tree/oreo/docs/XDAForumThreadTemplate)
     - Just c/p to your thread.
     - Use the "New DEVDB Project" option in the appropriate forum for your device.
     - Fill in the needed specific device areas.
     - Add manfromgta and canodroid15 to contributors for edit purposes.
 
-5. [About Team-OctOs] Example (http://review.teamoctos.com:8080/#/c/3554/)
+5. [About Team-OctOs] Example (***EDIT THIS WITH ADDRESS OF WORKING COMMIT***)
     - Add your device and other info.
     - Follow the example in the commit above.
 
