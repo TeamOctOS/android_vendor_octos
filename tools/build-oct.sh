@@ -47,8 +47,8 @@ usage() {
 
 
 # Import Colors
-. ./vendor/to/tools/colors
-. ./vendor/to/tools/res/octos-start
+. ./vendor/octos/tools/colors
+. ./vendor/octos/tools/res/octos-start
 
 
 # Check directories
@@ -57,7 +57,7 @@ if [ ! -d ".repo" ]; then
     echo ""
     exit 1
 fi
-if [ ! -d "vendor/to/" ]; then
+if [ ! -d "vendor/octos/" ]; then
     echo -e "${bldred}No vendor/to directory found. Is this a OCTOS build tree?${rst}"
     echo ""
     exit 1
@@ -240,7 +240,7 @@ fi
 
 
 # Start compilation
-    echo -e "${bldcya}Starting compilation: ${bldgrn}Building ${bldylw}OctOs N $VO${rst}"
+    echo -e "${bldcya}Starting compilation: ${bldgrn}Building ${bldylw}Oct-O $VO${rst}"
     echo ""
     make -j"$opt_jobs$opt_v$opt_i" bacon
 
