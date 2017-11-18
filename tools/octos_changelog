@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$OCTOS_CHANGELOG" = false ]
+then
+  # Do not add changelog
+  echo -e "No changelog..."
+  echo -e
+else
+  # Add changelog
+  echo -e "Creating changelog..."
+  echo -e
+  . $ANDROID_BUILD_TOP/vendor/octos/tools/changelog
+fi
