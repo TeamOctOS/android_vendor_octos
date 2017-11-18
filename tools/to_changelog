@@ -9,5 +9,5 @@ else
   # Add changelog
   echo -e "Creating changelog..."
   echo -e
-  . $ANDROID_BUILD_TOP/vendor/to/tools/changelog
+  . $ANDROID_BUILD_TOP/vendor/octos/tools/changelog
 fi

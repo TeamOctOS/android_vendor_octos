@@ -16,7 +16,7 @@ Commit your patches in a single commit.
     <make edits>
     git add -A
     git commit -m "Message"
-    git push ssh://<username>@review.teamoctos.com:29418/<project> HEAD:refs/for/oct-14.1
+    git push ssh://<username>@review.teamoctos.com:29418/<project> HEAD:refs/for/oreo
 
 **The git-review package will only have to be installed once.**
 

@@ -1,0 +1,5 @@
+<devices>
+    <vendor Name="Google">
+        <device FullName="Pixel 2XL" CodeName="taimen"/>
+    </vendor>
+</devices>
