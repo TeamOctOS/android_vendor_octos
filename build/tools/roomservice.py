@@ -35,18 +35,18 @@ except ImportError:
 
 # Config
 # set this to the default remote to use in repo
-default_rem = "to"
+default_rem = "octos"
 # set this to the default revision to use (branch/tag name)
-default_rev = "oct-14.1"
+default_rev = "oreo"
 # set defualt clone-depth
 default_clone_depth = ""
 # set this to the remote that you use for projects from your team repos
 # example fetch="https://github.com/omnirom"
-default_team_rem = "to"
+default_team_rem = "octos"
 # this shouldn't change unless google makes changes
 local_manifest_dir = ".repo/local_manifests"
 # change this to your name on github (or equivalent hosting)
-android_team = "Team-OctOS"
+android_team = "TeamOctOS"
 
 
 def check_repo_exists(git_data):
@@ -94,7 +94,7 @@ def get_device_url(git_data):
 
 
 def parse_device_directory(device_url,device):
-    to_strip = "platform_device"
+    to_strip = "android_device"
     repo_name = device_url[device_url.index(to_strip) + len(to_strip):]
     repo_name = repo_name[:repo_name.index(device)]
     repo_dir = repo_name.replace("_", "/")
@@ -219,9 +219,9 @@ def parse_device_from_folder(device):
 
 def parse_device_from_vendor(device):
     search = []
-    for sub_folder in os.listdir("vendor/to/product"):
-        if os.path.isdir("vendor/to/product/%s/%s" % (sub_folder, device)):
-            search.append("vendor/to/product/%s/%s" % (sub_folder, device))
+    for sub_folder in os.listdir("vendor/octos/product"):
+        if os.path.isdir("vendor/octos/product/%s/%s" % (sub_folder, device)):
+            search.append("vendor/octos/product/%s/%s" % (sub_folder, device))
     if len(search) > 1:
         print("multiple devices under the name %s. "
               "can not continue" % device)

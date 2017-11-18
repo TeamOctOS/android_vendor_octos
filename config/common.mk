@@ -1,7 +1,7 @@
 PRODUCT_BRAND ?= teamoctos
 
 # Include OctOS bootanimation
-include vendor/to/config/bootanimation.mk
+include vendor/octos/config/bootanimation.mk
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -25,9 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Pixel Launcher
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/apk/PixelLauncher.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
-    vendor/to/prebuilt/common/apk/PixelLauncherIcons.apk:system/app/pixellaunchericons/PixelLauncherIcons.apk \
-    vendor/to/prebuilt/common/apk/WallpaperPickerGoogle.apk:system/app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
+    vendor/octos/prebuilt/common/apk/PixelLauncher.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+    vendor/octos/prebuilt/common/apk/PixelLauncherIcons.apk:system/app/pixellaunchericons/PixelLauncherIcons.apk \
+    vendor/octos/prebuilt/common/apk/WallpaperPickerGoogle.apk:system/app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -47,38 +47,38 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/to/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/to/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
-    vendor/to/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/octos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/octos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/octos/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
+    vendor/octos/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # System feature whitelists
 PRODUCT_COPY_FILES += \
-    vendor/to/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/to/config/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
+    vendor/octos/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/octos/config/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
+    vendor/octos/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/to/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/octos/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/octos/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/octos/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
 # CM-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/etc/init.local.rc:root/init.cm.rc
+    vendor/octos/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/octos/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -90,16 +90,16 @@ PRODUCT_COPY_FILES += \
 
 # This is CM!
 PRODUCT_COPY_FILES += \
-    vendor/to/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
+    vendor/octos/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
-include vendor/to/config/cmsdk_common.mk
+include vendor/octos/config/cmsdk_common.mk
 endif
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
-include vendor/to/config/twrp.mk
+include vendor/octos/config/twrp.mk
 endif
 
 # Required CM packages
@@ -258,16 +258,16 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3
 
-DEVICE_PACKAGE_OVERLAYS += vendor/to/overlay/common
+DEVICE_PACKAGE_OVERLAYS += vendor/octos/overlay/common
 
 # Include OctOS versioning
-include vendor/to/config/to_versioning.mk
+include vendor/octos/config/to_versioning.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.to.display.version=$(TO_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/to/config/partner_gms.mk
+-include vendor/octos/config/partner_gms.mk
 -include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
