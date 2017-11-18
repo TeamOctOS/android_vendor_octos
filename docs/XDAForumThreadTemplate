@@ -1,10 +1,10 @@
 [center][IMG]https://www.teamoctos.com/wp-content/uploads/2014/01/octos_large-1.png[/IMG][/center]
 [center][IMG]https://www.teamoctos.com/wp-content/uploads/2017/04/Octos-300.png[/IMG][/center]
-[quote]Disclaimer: OctOs is a WIP. It has been evaluated as being stable, and is suitable for daily use in most cases. While it may be considered stable, there may be unknown bugs. The development team is not responsible for any damage to your device or your information.[/quote]
+[quote]Disclaimer: OctOS is a WIP. It has been evaluated as being stable, and is suitable for daily use in most cases. While it may be considered stable, there may be unknown bugs. The development team is not responsible for any damage to your device or your information.[/quote]
 
-[CENTER][SIZE="5"]Team OctOs presents Oct-N.[/SIZE][/CENTER]
+[CENTER][SIZE="5"]TeamOctOS presents Oct-O.[/SIZE][/CENTER]
 
-[CENTER]We maintain a current release record and change-log on our website: [URL="https://www.teamoctos.com/oct-n-weekly-lineageos-base/"]http://www.teamoctos.com[/URL]
+[CENTER]We maintain a current release record and change-log on our website: [URL="https://www.teamoctos.com/oct-o-weekly"]http://www.teamoctos.com[/URL]
 
 We have Gapps here.
 
@@ -39,17 +39,17 @@ We have Gapps here.
 
 
 [size=4]Frequently Asked Questions[/size]
-Q: Is this Android 7 (Nougat)?
-A: Yes, this is Android 7.1.2
+Q: Is this Android 8 (Oreo)?
+A: Yes, this is Android 8.x.x
 
-Q: What code is Oct-N based on?
-A: This version of Oct-N is based on LineageOS 14.1
+Q: What code is Oct-O based on?
+A: This version of Oct-O is based on AOSP+CAF
 
 Q: Why isn't there XYZ feature?
 A: Shoot us a Suggestion if you want to see something added.  While we are not going to promise to implement, we will always look into it
 
 Q: But all the others have..
-A: ROM developers, build something they want to use.  The ROM developer that includes something they won't run implies less than 100% effort to ensure it does work.  As a team, we have similar goals and objectives.  If XYZ ROM has a feature you want, and we don't include (or don't want to include), feel free to use XYZ ROM, or build your own custom version of Oct-N.
+A: ROM developers, build something they want to use.  The ROM developer that includes something they won't run implies less than 100% effort to ensure it does work.  As a team, we have similar goals and objectives.  If XYZ ROM has a feature you want, and we don't include (or don't want to include), feel free to use XYZ ROM, or build your own custom version of Oct-O.
 
 Q: What about root?
 A: Root is removed by default (user will be able to flash which ever root zip they want)
@@ -61,7 +61,7 @@ Bugs happen.  Our testers are very good at breaking things, but no where near as
 Like any other OS, Android has multiple log files that are generated and record the goings-on of the system.  As a user, you have two basic ways to view and pull these to send to us.  Without the information in the logfiles, there simply is not a whole lot of information to go on.
 
 [SIZE="3"]Log file APKs[/SIZE]
-Team OctOs recommends [URL="https://play.google.com/store/apps/details?id=com.tortel.syslog&hl=en"][COLOR="GREEN"]SysLog from the Android Market[/COLOR][/URL].  This application will allow you to selectively pick any (or all) of the system logs, compress them into a .ZIP file, and allow you to save, email, move to your Copy/DropBox/Cloud Storage account, etc.
+TeamOctOS recommends [URL="https://play.google.com/store/apps/details?id=com.tortel.syslog&hl=en"][COLOR="GREEN"]SysLog from the Android Market[/COLOR][/URL].  This application will allow you to selectively pick any (or all) of the system logs, compress them into a .ZIP file, and allow you to save, email, move to your Copy/DropBox/Cloud Storage account, etc.
 
 [SIZE="3"]ADB Logcat[/SIZE]
 The Android Debugging Bridge (ADB) is a powerful tool available from Google as part of the [URL="http://developer.android.com/sdk/index.html"][COLOR="GREEN"]Android Software Development Kit (SDK)[/COLOR][/URL].  Used for many things, being able to selectively see, in real-time, what your device is doing cannot be downplayed.  While there is more setup involved, if you are doing consistent ROM flashing, you really should invest the time to get setup properly to do it.
@@ -72,32 +72,32 @@ The Android Debugging Bridge (ADB) is a powerful tool available from Google as p
 [SIZE="4"]Basic Instructions:[/SIZE]
 [LIST=1]
 [*]Download ROM .zip file and MD5 file, and grab your favorite Open Gapps package [URL="http://opengapps.org/"]http://opengapps.org[/URL][*]Reboot to Recovery (Note: Use Reboot to Recovery from Power Menu, Hardware-based boot to recovery, or adb reboot recovery - ROM Manager or similar software is NOT supported)
-[COLOR="Red"]--- TWRP is the ONLY recovery Team OctOs uses - We do not support flashing on CWM ---[/COLOR]
-[COLOR="RED"]The Oct-N ROM installation script will automatically wipe /system, /cache, and /dalvik-cache. There is no need to do these before or after flashing the ROM unless you are instructed to by your Gapps Provider. When dirty flashing weekly updates, you MUST reflash Gapps along with any other files, apps, custom mods or kernels etc.. (anything that resides in system partition)[/COLOR]
+[COLOR="Red"]--- TWRP is the ONLY recovery TeamOctOS uses - We do not support flashing on CWM ---[/COLOR]
+[COLOR="RED"]The Oct-O ROM installation script will automatically wipe /system, /cache, and /dalvik-cache. There is no need to do these before or after flashing the ROM unless you are instructed to by your Gapps Provider. When dirty flashing weekly updates, you MUST reflash Gapps along with any other files, apps, custom mods or kernels etc.. (anything that resides in system partition)[/COLOR]
 [*]Flash ROM, GApps and any additional .ZIP files
 [*]Reboot
 [/LIST]
 [SIZE="4"]Download[/SIZE]
-[COLOR="green"][URL="https://www.teamoctos.com/oct-n-weekly-lineageos-base/"]Download from Team-OctOS web site![/URL][/COLOR]
+[COLOR="green"][URL="https://www.teamoctos.com/oct-o-weekly/"]Download from TeamOctOS web site![/URL][/COLOR]
 [SIZE="4"]Change log[/SIZE]
-[COLOR="green"][URL="https://www.teamoctos.com/oct-n-weekly-lineageos-base/"]View change log on Team-OctOS web site![/URL][/COLOR]
+[COLOR="green"][URL="https://www.teamoctos.com/oct-o-weekly/"]View change log on TeamOctOS web site![/URL][/COLOR]
 
-The foundation of the Android OS is the fact that is it open-source.  We have [I]all[/I] code we use internally in the creation of Oct-N available on our GitHub repositories.
+The foundation of the Android OS is the fact that is it open-source.  We have [I]all[/I] code we use internally in the creation of Oct-O available on our GitHub repositories.
 
-Unless otherwise specified, all Oct-N builds kernel souce can be found on github at [URL="http://www.github.com/Team-OctOS"][COLOR="RED"]Team-OctOS[/COLOR][/URL].
+Unless otherwise specified, all Oct-O kernel source can be found on github at [URL="http://www.github.com/TeamOctOS-Devices"][COLOR="RED"]TeamOctOS[/COLOR][/URL].
 
-[URL="http://www.github.com/Team-OctOs"]Team OctOs GitHub - http://www.github.com/Team-OctOs[/URL]
-[URL="http://review.teamoctos.com:8080"]Team OctOs Gerrit Review - http://www.teamoctos.com:8080[/URL]
-[URL="http://www.teamoctos.com/license/"]Team OctOs GPLv2 License - http://www.teamoctos.com/license/[/URL]
-[URL="https://www.patreon.com/TOctOs"]Team OctOs Patreon Campaign - https://www.patreon.com/TOctOs[/URL]
+[URL="http://www.github.com/TeamOctOS"]TeamOctOS GitHub - http://www.github.com/TeamOctOS[/URL]
+[URL="http://review.teamoctos.com:8080"]TeamOctOS Gerrit Review - http://www.teamoctos.com:8080[/URL]
+[URL="http://www.teamoctos.com/license/"]TeamOctOS GPLv2 License - http://www.teamoctos.com/license/[/URL]
+[URL="https://www.patreon.com/TOctOs"]TeamOctOS Patreon Campaign - https://www.patreon.com/TOctOs[/URL]
 [URL="https://www.teamoctos.com/donate/"]Donate to OctOS Development (PayPal)[/URL]
 
 [SIZE="3"]Want To Build Your Own?[/SIZE]
-Check out the [URL="https://github.com/Team-OctOS/platform_manifest#team-octos-android-source"][COLOR="GREEN"]ReadMe[/COLOR][/URL] on our GitHub for Instructions
+Check out the [URL="https://github.com/TeamOctOS/android_manifest#team-octos-android-source"][COLOR="GREEN"]ReadMe[/COLOR][/URL] on our GitHub for Instructions
 
 [quote]Special thanks to
 [LIST]
-[*] Our testers, without which, there would be no public releases for OctOs
+[*] Our testers, without which, there would be no public releases for OctOS
 
 We would also like to thank
 [*] AOSP
@@ -107,7 +107,7 @@ We would also like to thank
 [/LIST]
 [/quote]
 
-Follow Team-OctOS!
+Follow TeamOctOS!
 [URL="https://www.facebook.com/TeamOctOs"][IMG]http://i83.photobucket.com/albums/j307/jadcy/facebook_logo_21-30x301_zps757635ef.png[/IMG][/URL] [URL="https://plus.google.com/communities/102188586220747781076/"][IMG]http://i83.photobucket.com/albums/j307/jadcy/icon_google_plus_30x30_zps145d0ba4.png[/IMG][/URL] [URL="https://www.twitter.com/TeamOctOs"][IMG]http://i83.photobucket.com/albums/j307/jadcy/twitter_icon_tcm561-115883_zps6e3322b9.jpg[/IMG][/URL]
 
 

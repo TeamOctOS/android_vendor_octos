@@ -1,8 +1,0 @@
-#!/system/bin/sh
-#
-# Print startup info
-#
-L="log -p i -t to"
-
-
-$L "Welcome to Android `getprop ro.build.version.release` / Team-OctOs-`getprop ro.to.version`";
