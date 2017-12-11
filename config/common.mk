@@ -182,12 +182,12 @@ PRODUCT_PACKAGES += \
     zip
 
 # Custom off-mode charger
-ifneq ($(WITH_CM_CHARGER),false)
+ifneq ($(WITH_LINEAGE_CHARGER),false)
 PRODUCT_PACKAGES += \
     charger_res_images \
-    cm_charger_res_images \
+    lineage_charger_res_images \
     font_log.png \
-    libhealthd.cm
+    libhealthd.lineage
 endif
 
 # ExFAT support
