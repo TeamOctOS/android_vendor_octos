@@ -122,12 +122,12 @@ def fetch_query(remote_url, query):
         raise Exception('Gerrit URL should be in the form http[s]://hostname/ or ssh://[user@]host[:port]')
 
 if __name__ == '__main__':
-    # Default to LineageOS Gerrit
-    default_gerrit = 'http://review.lineageos.org'
+    # Default to TeamOctOS Gerrit
+    default_gerrit = 'http://review.teamoctos.com'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
-        patches from LineageOS's Gerrit instance (or any gerrit instance of your choosing)
+        patches from TeamOctOS's Gerrit instance (or any gerrit instance of your choosing)
 
         Given a list of change numbers, repopick will cd into the project path
         and cherry pick the latest patch available.
@@ -314,10 +314,10 @@ if __name__ == '__main__':
         if item['project'].startswith("LineageOS/"):
             prj_to_split = item['project'].split('/', 1)
             item['project'] = prj_to_split[1]
-        if item['project'].startswith("Team-OctOS/"):
+        if item['project'].startswith("TeamOctOS/"):
             prj_to_split = item['project'].split('/', 1)
             item['project'] = prj_to_split[1]
-        if item['project'].startswith("Team-OctOS-Devices/"):
+        if item['project'].startswith("TeamOctOS-Devices/"):
             prj_to_split = item['project'].split('/', 1)
             item['project'] = prj_to_split[1]
 
