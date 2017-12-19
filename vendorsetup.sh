@@ -1,1 +1,3 @@
+add_lunch_combo octos_taimen-userdebug
+add_lunch_combo octos_wahoo-userdebug
 
