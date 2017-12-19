@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # Copyright (C) 2012-2013, The CyanogenMod Project
 #           (C) 2017,      The LineageOS Project
+# Copyright (C) 2017,      The OctOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -52,7 +53,7 @@ except:
     device = product
 
 if not depsonly:
-    print("Device %s not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS)." % device)
+    print("Device %s not found. Attempting to retrieve device repository from TeamOctOS-Devices Github (http://github.com/TeamOctOS-Devices)." % device)
 
 repositories = []
 
@@ -72,7 +73,7 @@ def add_auth(githubreq):
         githubreq.add_header("Authorization","Basic %s" % githubauth)
 
 if not depsonly:
-    githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=%s+user:LineageOS+in:name+fork:true" % device)
+    githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=%s+user:TeamOctOS-Devices+in:name+fork:true" % device)
     add_auth(githubreq)
     try:
         result = json.loads(urllib.request.urlopen(githubreq).read().decode())
@@ -176,12 +177,12 @@ def add_to_manifest(repositories, fallback_branch = None):
         repo_target = repository['target_path']
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
-            print('LineageOS/%s already fetched to %s' % (repo_name, repo_target))
+            print('TeamOctOS-Devices/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
-        print('Adding dependency: LineageOS/%s -> %s' % (repo_name, repo_target))
+        print('Adding dependency: TeamOctOS-Devices/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "LineageOS/%s" % repo_name })
+            "name": "%s" % repo_name })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
@@ -190,6 +191,12 @@ def add_to_manifest(repositories, fallback_branch = None):
             project.set('revision', fallback_branch)
         else:
             print("Using default branch for %s" % repo_name)
+
+        if 'remote' in repository:
+            project.set('remote',repository['remote'])
+        else:
+            print("Using default remote for %s" % repo_name)
+            project.set('remote','octos-devices')
 
         lm.append(project)
 
@@ -203,7 +210,7 @@ def add_to_manifest(repositories, fallback_branch = None):
 
 def fetch_dependencies(repo_path, fallback_branch = None):
     print('Looking for dependencies in %s' % repo_path)
-    dependencies_path = repo_path + '/lineage.dependencies'
+    dependencies_path = repo_path + '/octos.dependencies'
     syncable_repos = []
     verify_repos = []
 
@@ -299,4 +306,4 @@ else:
             print("Done")
             sys.exit()
 
-print("Repository for %s not found in the LineageOS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
+print("Repository for %s not found in the TeamOctOS-Devices Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
