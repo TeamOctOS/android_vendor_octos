@@ -1,1 +1,4 @@
-
+add_lunch_combo octos_serranolteusc-userdebug
+add_lunch_combo octos_serranoltexx-userdebug
+add_lunch_combo octos_serrano3gxx-userdebug
+add_lunch_combo octos_serranodsdd-userdebug
