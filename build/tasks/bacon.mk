@@ -17,7 +17,7 @@
 # -----------------------------------------------------------------
 # Octos OTA update package
 
-OCTOS_TARGET_PACKAGE := $(PRODUCT_OUT)/octos-$(OCTOS_VERSION).zip
+OCTOS_TARGET_PACKAGE := $(PRODUCT_OUT)/$(OCTOS_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
