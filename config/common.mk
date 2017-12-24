@@ -19,11 +19,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# Included prebuilt apk's
+PRODUCT_PACKAGES += \
+    PixelLauncher \
+    PixelLauncherIcons \
+    WallpaperPickerGoogle
+
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Hassium.ogg \
     ro.config.ringtone=Titania.ogg \
-    ro.config.notification_sound=Tethys.ogg \
+    ro.config.notification_sound=Tethys.ogg
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
